@@ -1,7 +1,7 @@
 module.exports = {
   title: 'HVuepress',
   description: 'Just playing around',
-  // base: '/vuepres-sandbox/.vuepress/dist',
+  base: '/vuepres-sandbox/',
   dest: 'docs',
   markdown: {
     lineNumbers: true
