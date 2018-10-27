@@ -5,48 +5,39 @@ module.exports = {
     lineNumbers: true
   },
   themeConfig: {
+    repo: 'HenryTabima/vuepres-sandbox',
     displayAllHeaders: true, // Default: false
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Page1', link: '/page1' },
-      { text: 'foo', link: '/foo/' },
-      { text: 'google', link: 'https://google.com' },
       {
-        text: 'Languages',
+        text: 'Foo Bar',
         items: [
-          { text: 'Chinese', link: '/language/chinese' },
-          { text: 'Japanese', link: '/language/japanese' }
+          { text: 'foo', link: '/foo/' },
+          { text: 'bar', link: '/bar/' }
         ]
       },
-      {
-        text: 'Groups',
-        items: [
-          { text: 'Group1', items: [
-            { text: 'item1', link: '/item' },
-            { text: 'item2', link: '/item' }
-          ] },
-          { text: 'Group2', items: [
-            { text: 'item3', link: '/item' },
-            { text: 'item4', link: '/item' }
-          ] }
-        ]
-      }
+      { text: 'Contact', link: '/contact' },
+      { text: 'About', link: '/about' }
     ],
-    sidebar: [
-      {
-        title: 'Group 1',
-        collapsable: false,
-        children: [
-          '/'
-        ]
-      },
-      {
-        title: 'Group 2',
-        children: [
-          '/page1',
-          ['/foo/', 'Explicit link text']
-        ]
-      }
-    ]
+    sidebar: {
+      '/bar/': [
+        '',     /* /foo/ */
+        'one',  /* /foo/one.html */
+        'two'   /* /foo/two.html */
+      ],
+
+      '/foo/': [
+        '',      /* /bar/ */
+        'three', /* /bar/three.html */
+        'four'   /* /bar/four.html */
+      ],
+
+      // fallback
+      '/': [
+        '',        /* / */
+        'contact', /* /contact.html */
+        'about'    /* /about.html */
+      ]
+    }
   }
 }

@@ -1,7 +1,6 @@
-# SecondaryPage
-Page 1
-# Hi Vuepress
+# One
 Esto esta muy interesante 👊
+
 [[toc]]
 ## probando el titulo h2
 ### y el h3
