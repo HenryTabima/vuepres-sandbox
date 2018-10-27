@@ -6,6 +6,11 @@ module.exports = {
   },
   themeConfig: {
     repo: 'HenryTabima/vuepres-sandbox',
+    repoLabel: 'Contribute!',
+    docsRepo: 'HenryTabima/vuepres-sandbox',
+    docsBranch: 'master',
+    editLinks: true,
+    editLinkText: 'Help us improve this page!',
     displayAllHeaders: true, // Default: false
     nav: [
       { text: 'Home', link: '/' },
